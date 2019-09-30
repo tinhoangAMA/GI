@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - npm install
+      - npm run dev
+  build:
+    commands:
+      # CI=true node node_modules/react-scripts/scripts/test.js --json --outputFile testOutput.json
+      #- CI=true node node_modules/react-scripts/scripts/test.js -- --json --coverage --outputFile testCoverageOutput.json
+      
+artifacts:
+  files:
+    #- testCoverageOutput.json
