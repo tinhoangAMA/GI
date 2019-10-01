@@ -4,7 +4,7 @@ phases:
     commands:
       - npm install
       # Start our application
-      - nohup node main.js > output.log &           
+      - node main.js > /dev/null &           
       # Download ngrok and open tunnel to our application
       - wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
       - unzip ngrok-stable-linux-amd64.zip
